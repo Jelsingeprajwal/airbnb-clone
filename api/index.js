@@ -24,7 +24,8 @@ app.use("/uploads", express.static(__dirname + "/uploads"));
 app.use(
   cors({
     credentials: true,
-    origin: "http://localhost:5173",
+    // origin: "http://localhost:5173",
+    origin: "https://airbnb-clone-bay-five.vercel.app", // deployment link
   })
 );
 //Database connection
